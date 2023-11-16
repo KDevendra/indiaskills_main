@@ -1,0 +1,490 @@
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.loader {
+    width: 28px;
+    height: 28px;
+    border: 3px solid #fff;
+    border-bottom-color: #918bda;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.error {
+    color: #6259ca;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes chartjs-render-animation {
+    from {
+        opacity: 0.99;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes chartjs-render-animation {
+    from {
+        opacity: 0.99;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.chartjs-render-monitor {
+    -webkit-animation: chartjs-render-animation 0.001s;
+    animation: chartjs-render-animation 0.001s;
+}
+
+#promo-notifications {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#promo-notifications ul {
+    display: inline-block;
+    animation: scrollPromotions 50s linear infinite;
+}
+
+#promo-notifications li {
+    display: inline-block;
+    padding: 8px;
+    font-size: 14px;
+}
+
+@keyframes scrollPromotions {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.notice-card-shadow {
+    /* width: 40%; */
+    /* height: 30%; */
+    overflow: hidden;
+    text-align: left;
+    padding: 15px;
+    height: 330px;
+    /* border: 1px solid #ccc; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.scrolling-text {
+    animation: scroll 2s linear infinite;
+    font-size: 14px;
+    line-height: 20px;
+    /* text-align: center; */
+    background: rgba(0, 0, 0, 0) url("../theme/images/blt_arrow.png") no-repeat scroll left 5px;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+
+.scrolling-text a:hover {
+    text-decoration: underline;
+    color: #0c243e;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+#promo-notifications {
+    /* background-color: #0c243e; */
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(12, 36, 62, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: #fff;
+}
+
+.minister-panel h4 {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+    font-weight: bold;
+    font-size: 18px;
+    color: #0c243e;
+    padding-top: 10px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.btn-icon-list .ripple {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-name {
+    text-transform: capitalize;
+}
+/* s */
+.bn-speak h1 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+.about-section h5 {
+    font-size: 24px;
+    color: #0c243e;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+}
+.about-section .about-sub-title {
+    font-size: 18px;
+    color: #0c243e;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.about-section ul {
+    list-style: disc;
+    margin-left: 12px;
+}
+.about-section ul li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.about-section .view-more-p {
+    margin: 10px 0;
+    position: relative;
+    left: 0;
+    display: inline-block;
+}
+.about-section p {
+    text-align: justify;
+}
+.minister-panel img {
+    height: 200px;
+}
+.minister-panel {
+    padding: 15px;
+}
+.fs_initial {
+    font-weight: initial !important;
+}
+.border_2px {
+    border-bottom: 2px solid #0c243e;
+    border-width: unset;
+    width: 110px;
+    padding-bottom: 0px !important;
+    margin-bottom: 10px;
+}
+/* Gradient Divider */
+.divider {
+    background: linear-gradient(to right, #050b2c, #03c5f1, #03c5f1);
+    height: 2px;
+    width: 140px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 300px; Adjust the height as needed */
+    overflow: hidden;
+}
+
+/* Style for individual cards */
+.card {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Style for the active card */
+.active {
+    display: block;
+}
+
+/* Style for the card images */
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+.card h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    border-bottom: none;
+}
+.card p {
+    font-size: 14px;
+    text-transform: capitalize;
+    border-bottom: none;
+    text-align: center;
+    padding-bottom: 0;
+}
+.pt-0 {
+    padding-top: 0 !important;
+}
+.main-notice {
+    border: 1px solid #dadada;
+    background-color: #fff;
+}
+.main-notice h4 {
+    font-size: 18px;
+    text-align: center;
+
+    margin-top: 10px;
+}
+.nofification-section {
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(12, 36, 62) 0%, rgb(0, 212, 255) 100%) !important;
+}
+#benefits-section h5 {
+    font-size: 24px;
+    color: #0c243e;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#benefits-section ul {
+    list-style: disc;
+    margin-left: 12px;
+}
+#benefits-section ul li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.amportnentLinks .LinkItem {
+    padding: 10px;
+    /* border: 1px solid; */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(12, 36, 62, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: #fff;
+    margin-bottom: 10px;
+}
+.amportnentLinks .LinkItem a {
+    color: #fff;
+    margin-left: 10px;
+}
+.amportnentLinks .LinkItem:hover a {
+    text-decoration: underline;
+}
+.gallery-container h5 {
+    font-size: 24px;
+    color: #0c243e;
+    font-weight: bold;
+}
+.gallery-container p {
+    padding: 10px 8px;
+    /* background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(12, 36, 62) 0%, rgba(0,212,255,0.8967787798713235) 100%); */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: -4px;
+    background: #0c243e;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    text-align: center;
+}
+/* Set the Owl Carousel container to have relative positioning */
+.owl-nav {
+    position: relative;
+  }
+  
+  /* Position the Previous button to the left */
+  .owl-prev {
+    position: absolute;
+    left: -70px; /* Adjust the left value as needed */
+    top: -115px !important; /* Adjust the top value to vertically center it if needed */
+    transform: translateY(-50%);
+    /* background-color: #050b2c !important; */
+    border: 1px solid #050b2c !important;
+    background: transparent !important;
+    color: #fff !important;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+ .owl-prev span
+  {
+    color:  #050b2c ;
+  }
+  .owl-next span
+  {
+    color:  #050b2c ;
+  }
+  
+  
+  /* Position the Next button to the right */
+  .owl-next {
+    position: absolute;
+    right: -70px; /* Adjust the right value as needed */
+    top: -115px !important; /* Adjust the top value to vertically center it if needed */
+    transform: translateY(-50%);
+    border: 1px solid #050b2c !important;
+    background: transparent !important;
+    color: #fff !important;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #0c243e !important;
+  }
+  .owl-prev:hover
+  {
+    background-color: #050b2c !important;
+    color: #fff !important;
+  }
+  .owl-prev:hover span
+  {
+    color:  #fff !important ;
+  }
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #0c243e !important;
+  }
+  .owl-next:hover
+  {
+    background-color: #050b2c !important;
+    color: #fff !important;
+  }
+  .owl-next:hover span
+  {
+    color:  #fff !important ;
+  }
+  .footer-wrapper h5{
+    font-size: 18px;
+  color: #0c243e;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  .divider1{
+    background: linear-gradient(to right, #050b2c, #03c5f1, #03c5f1);
+    height: 2px;
+    width: 30px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+
+.social-media-icons ul {
+    list-style: none;
+    padding: 0;
+    /* text-align: center; */
+}
+
+.social-media-icons a { 
+  display: inline-block;
+  text-decoration: none;
+  padding: 3px;
+  font-size: 30px;
+}
+
+.social-media-icons a:nth-child(1) i {
+  color: #d34836;
+}
+
+.social-media-icons a:nth-child(2) i {
+  color: #4099FF;
+}
+
+.social-media-icons a:nth-child(3) i {
+  color: #b31217;
+}
+
+.social-media-icons a:nth-child(4) i {
+  color: #FF6600;
+}
+.social-media-icons a i:hover{
+  color: black;
+}
+.footer_links{
+    margin-left: 13px;
+}
+.footer_links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+
+}
+
+.footer_links ul li{
+    list-style-type: disc;
+}
+
+
+/* Styles for the loader container */
+.table-loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* Make sure it's above other elements */
+}
+
+/* Styles for the loader content */
+.loader-content {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Styles for the loader spinner (you can use your own spinner) */
+.loader-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+/* Animation for the spinner */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
